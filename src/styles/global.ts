@@ -8,8 +8,8 @@ export const GlobalFonts = createGlobalStyle`
 
   @font-face {
     font-family: 'Alarm Clock';
-    src: url('./fonts/alarm-clock.woff2') format('woff2'), 
-      url('./fonts/alarm-clock.woff') format('woff')
+    src: url('./countdown/fonts/alarm-clock.woff2') format('woff2'), 
+      url('./countdown/fonts/alarm-clock.woff') format('woff')
   }
 
   @keyframes lines {

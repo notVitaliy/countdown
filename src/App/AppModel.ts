@@ -17,9 +17,9 @@ export class AppModel {
   }
 
   tick() {
-    this.timeLeft = dayjs(this.endTime).diff(dayjs())
+    this.timeLeft = this.timeLeft <= 100 ? 0 : dayjs(this.endTime).diff(dayjs())
 
-    requestAnimationFrame(() => setTimeout(() => this.tick(), 0))
+    if (this.timeLeft > 0) requestAnimationFrame(() => setTimeout(() => this.tick(), 10))
   }
 
   get microseconds() {
