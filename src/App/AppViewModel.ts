@@ -15,7 +15,7 @@ export class AppViewModel {
   }
 
   get seconds() {
-    return this.appModel.secondsLeft > 10 ? this.appModel.secondsLeft : `0${this.appModel.secondsLeft}`
+    return this.appModel.secondsLeft >= 10 ? this.appModel.secondsLeft : `0${this.appModel.secondsLeft}`
   }
 
   get minutes() {
